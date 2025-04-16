@@ -3,7 +3,7 @@ import {Header} from "./Header.tsx";
 
 function App() {
     return (
-        <div>
+        <div className="appContainer">
             <Header />
         </div>
     )
