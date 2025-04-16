@@ -81,6 +81,11 @@
   cursor: pointer;
 }
 
+.card a {
+  text-align: center;
+  text-decoration: none;
+}
+
 
 /* Страница продукта / товара */
 
