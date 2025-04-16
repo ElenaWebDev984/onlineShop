@@ -1,9 +1,26 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
 
+export type ProductType = {
+    _id: string
+    id: number
+    title: string
+    price: number
+    description: string
+    category: string
+    image: string
+    rating: {
+        rate: number
+        count: number
+    }
+    createdAt: string
+    updatedAt: string
+    __v: number
+}
+
 export const BestSellers = () => {
 
-    const [products, setProducts] = useState<any>([])
+    const [products, setProducts] = useState<ProductType[]>([])
 
     useEffect(() => {
     // обращение к серверу при загрузке страницы
