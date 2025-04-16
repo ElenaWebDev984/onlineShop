@@ -1,8 +1,11 @@
 import './App.css'
+import {Header} from "./Header.tsx";
 
 function App() {
     return (
-        <div>App</div>
+        <div>
+            <Header />
+        </div>
     )
 }
 
