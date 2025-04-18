@@ -11,7 +11,7 @@ import { Reviews } from "./Reviews.tsx";
 export const Product = () => {
     const [product, setProduct] = useState<ProductType | null>(null);
 
-    const [isProductInCart, setIsProductIncart] = useState<boolean>(false);
+    const [isProductInCart, setIsProductInCart] = useState<boolean>(false);
 
     const { productId } = useParams();
 
@@ -25,7 +25,7 @@ export const Product = () => {
 
     const addProductToCartHandler = () => {
         alert("Товар успешно добавлен в корзину");
-        setIsProductIncart(true);
+        setIsProductInCart(true);
     };
 
     if (product === null) {
