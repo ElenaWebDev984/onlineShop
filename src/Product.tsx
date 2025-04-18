@@ -5,6 +5,7 @@ import rating from "./assets/img/rating.svg";
 import cartWhite from "./assets/img/cartWhite.svg";
 import {Link, useParams} from "react-router";
 import arrowBack from "./assets/img/arrowBack.svg";
+import {Reviews} from "./Reviews.tsx";
 
 export const Product = () => {
     const [product, setProduct] = useState<ProductType | null>(null);
@@ -35,7 +36,6 @@ export const Product = () => {
                     Back to Best Seller
                 </Link>
             </div>
-
             <div className="product">
                 <img src={product.image} alt="" />
                 <div className="info">
@@ -56,6 +56,7 @@ export const Product = () => {
                     </button>
                 </div>
             </div>
+            <Reviews/>
         </div>
     );
 };
